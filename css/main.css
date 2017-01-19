@@ -28,7 +28,7 @@ html {
   top: 94px;
   transform: translateX(-50%);
   transform-origin: center bottom;
-  animation: hour-spin 6s infinite linear;
+  animation: spin 6s infinite linear;
 }
 
 .hand-minute {
@@ -36,15 +36,17 @@ html {
   top: 65px;
   transform: translateX(-50%);
   transform-origin: center bottom;
-  animation: minute-spin 500ms infinite linear;
+  animation: spin 500ms infinite linear;
 }
 
-@keyframes hour-spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+@keyframes spin {
 
-@keyframes minute-spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
 }
